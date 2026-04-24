@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Library</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="group" onclick="toggleGroup('g2')">📚 My books
+        <div class="group" onclick="toggleGroup('g21')">📚 Books 1</div>
+        </div>
+        <div class="pdf-list" id="g21">
+            <div class="pdf-item" onclick="openPDF(this,'book1.pdf')">📄 ज़रूरत से ज़्यादा सोचना खुशी छीन लेता है</div>
+            <div class="pdf-item" onclick="openPDF(this,'book2.pdf')">📄 आत्मा और शरीर का परिचय</div>
+            <div class="pdf-item" onclick="openPDF(this,'book3.pdf')">📄 आत्मा की नवरात्रि</div>
+        </div>
+
+    </div>
+
+    <!-- Viewer -->
+    <div class="viewer">
+
+        <div class="topbar">
+            <span id="fileName">Select PDF</span>
+            <button onclick="downloadPDF()">Download</button>
+        </div>
+
+        <iframe id="pdfViewer"></iframe>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
