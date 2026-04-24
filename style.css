@@ -7,7 +7,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 280px;
+    width: 10%;
     background: #1e272e;
     color: white;
     overflow-y: auto;
